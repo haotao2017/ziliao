@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            background-image: url('header2.png');
+            /* 替换为你的背景图片链接 */
+            height: 200px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .header h1 {
+            margin: 5px 0;
+        }
+
+        .buttons {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttons button {
+            /* margin: 5px; */
+            padding: 10px;
+            align-self: flex-end;
+        }
+
+        .buttonhead {
+            text-align: center;
+            margin: 0px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttonhead button {
+            /* margin: 5px; */
+            /* padding: 10px 20px; */
+            background-color: #67A4CD;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 154px;
+            height: 54px;
+            color: #ffffff;
+            font-size: 34;
+            font-weight: bolder;
+            align-self: flex-start;
+        }
+
+        .section {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        .section .title {
+            color: #6794d7;
+            font-size: 20px;
+            font-weight: normal;
+            align-self: flex-start;
+        }
+
+        .section img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .contentText {
+            font-size: 20;
+            line-height: 30px;
+            text-align: left;
+        }
+    </style>
+    <title>Static Page</title>
+</head>
+
+<body>
+    <div class="background">
+        <div style="position: absolute;top: 0px;right: 0px;color: #ffffff;font-size: 13px;">Start Sky Images – Adobe Stock</div>
+        <div style="display: flex;justify-content: flex-start;flex-direction: row;width: 100%;margin-left: 50px;" class="header">
+            <h1 style="font-size: 64px;color: #ffffff;margin: 0px;">process journals & Reflection</h1>
+        </div>
+    </div>
+    <div class="buttonhead">
+        <button class="topExpandButton" onclick="loadContentPage('early')">Early stage 4A</button>
+        <button class="topExpandButton" onclick="loadContentPage('mid')">Mid stage</button>
+        <button class="topExpandButton" onclick="loadContentPage('late')">Late stage</button>
+        <button class="topExpandButton" onclick="loadContentPage('course')">Course Reflection</button>
+    </div>
+
+    <div style="width: 100%;display: flex;flex-direction: column;align-items: center;" id="content">
+
+        <div style='width: 100%;display: flex;flex-direction: column;align-items: center;'>
+        <div class='section' id='section-1'>
+            <h2 class='title'>04-Aug-2024 - 10-Aug-2024</h2>
+            <div style='display: flex;flex-direction: row;'>
+                <div style='width: 70%;' class='contentText;'>
+                    The focus of the week was to complete the poster by the upcoming deadline and decide on a specific theme. Ultimately, I chose the theme of "whale watching" after considering multiple complex themes and seeking inspiration from other people's designs. I then initiated research on whale watching seasons and Australian social patterns to gather the necessary data and references needed to design the website.
+                </div>
+                <div style='display: flex;flex-direction: column;'>
+                    <img src='es1.png' alt='Placeholder Image 1'>
+                </div>
+                
+            </div>
+            </div>
+            <div class='section' id='section-2'>
+            <h2 class='title'>11-Aug-2024 - 17-Aug-2024</h2>
+            <div style='display: flex;'>
+                <img src='es2.png' alt='Placeholder Image 1'>
+                <p style='width: 70%;' class='contentText'>
+                    During the week I completed the design of the poster and the website, and tried to make both consistent with the chosen theme. I worked until late to complete the website but achieved a satisfactory result. In the practical class I discussed with other students and simulated the tasks of the upcoming group project.
+                </p>
+            </div>
+            </div>
+            <div class='section' id='section-3'>
+            <h2 class='title'>18-Aug-2024 - 24-Aug-2024</h2>
+            <p class='contentText'>
+                This week we formed teams for our upcoming projects. I actively participated in the group formation and discussions, and contributed to the selection of the project topic based on my individual work. We presented the posters produced in the previous phase and discussed the group activities outlined in the team charter. My work was selected as the theme for our team project. In the following group discussions, I focused on being friendly and open-minded, and listening more while providing positive feedback.        </p>
+            </div>
+            
+            <div class='section' id='section-4'>
+                <h2 class='title'>Periodic reflection</h2>
+                <p class='contentText'>
+                    This week was a whirlwind of creativity and reflection, as I successfully completed the poster, a critical stage in our group project. The journey began with completing the poster, a task complicated by the late conception of the theme. Time constraints forced me to engage in an intense period of design work to align the poster and my website with the overall theme I had envisioned. The pressure ultimately led to an all-nighter to complete the website. While proud of the result, the experience taught me an important lesson in time management, especially for future projects where I hope to avoid last-minute sprints of work.
+                </p>
+                <p class='contentText'>
+                    In the practical class, we worked intensively on the preparations for the upcoming group project under the guidance of our tutor. The climax of the week was the formation of our project team. Discussions in class led to the signing of the team charter and the presentation of the poster last week. The course continues to be a valuable mirror that has revealed subjects I need to study further.
+                    Overall, this week was full of achievements and reflections that have driven professional growth and personal development.
+                </p>
+            </div>
+    </div>
+
+
+        <!-- <div style='width: 100%;display: flex;flex-direction: column;align-items: center;'>
+        <div class='section' id='section-1'>
+            <h2 class='title'>25-Aug-2024 - 31-Aug-2024</h2>
+            <div style='display: flex;flex-direction: row;'>
+                <div style='width: 70%;' class='contentText;'>
+                    This week I started working on the project prototype and found it difficult to manage the project work while balancing tasks from other courses. Therefore, I decided to contact team members more frequently to improve collaboration and coordination in future stages of the project. I prepared a timeline to help remember important submission dates and avoid missing tasks in the future.                </div>
+                <div style='display: flex;flex-direction: column;'>
+                    <img src='iw-2.png' alt='Placeholder Image 1'>
+                </div>
+                
+            </div>
+            </div>
+            <div class='section' id='section-2'>
+            <h2 class='title'>01-Sep-2024 - 07-Sep-2024</h2>
+            <div style='display: flex;'>
+                <img src='m-s-2.png' alt='Placeholder Image 1'>
+                <p style='width: 70%;' class='contentText'>
+                    We had a team presentation this week, but due to poor communication and coordination, the overall performance was not as good as expected. But anyway, we decided to take a break this week.                </p>
+            </div>
+            </div>
+            
+            <div class='section' id='section-4'>
+                <h2 style='align-self: center;' class='title'>Periodic reflection</h2>
+                <p class='contentText'>
+                    This week marked the beginning of our prototype development – ​​a critical phase for our project. Reflecting on the chaos of last week, I wish I had been more coordinated. However, the challenge of synchronizing timetables remained, as this was compromised by the heavy assessment requirements of other courses. This week, we had a presentation. In retrospect, while everyone put in a commendable effort, the result did not fully reflect our potential. The lack of communication within the team was evident, especially our failure to verify the completeness of everyone’s contribution, which caused our presentation to exceed the allotted time. It was clear that more cohesive teamwork was essential. We also held multiple meetings focused on identifying and defining the characteristics of our project.
+                </p>
+                <p class='contentText'>
+                    All in all, this week’s experience highlighted the ongoing effort to balance academic obligations, the importance of effective team communication, and the need for better organizational strategies. Going forward, I am confident in fostering a collaborative and productive environment with my team, aimed at efficient communication and timely completion of tasks.
+                </p>
+            </div>
+    </div> -->
+
+        <!-- <div style='width: 100%;display: flex;flex-direction: column;align-items: center;'>
+        <div class='section' id='section-1'>
+            <h2 class='title'>08-Sep-2024 - 14-Sep-2024</h2>
+            <div style='display: flex;flex-direction: row;'>
+                <div style='width: 70%;' class='contentText;'>
+                    We have held several meetings this week, focusing on defining the project features and discussing
+                    mid-term results. So far, the prototype has been completed and the code is being written. I finally
+                    learned how to use github, which is very convenient for collective completion of code. </div>
+                <div style='display: flex;flex-direction: column;'>
+                    <img src='ls-1.png' alt='Placeholder Image 1'>
+                </div>
+    
+            </div>
+        </div>
+        <div class='section' id='section-2'>
+            <h2 class='title'>15-Sep-2024 - 21-Sep-2024</h2>
+            <div style='display: flex;'>
+                <img src='ls-2.png' alt='Placeholder Image 1'>
+                <p style='width: 70%;' class='contentText'>
+                    This week we focused on building the website and creating the corresponding MVP presentation. I
+                    contributed to the project by taking on coding-related support work and working with teammates with
+                    stronger IT backgrounds. I planned to find additional resources to improve my coding skills during the
+                    holiday. After the MVP presentation, our team agreed that our website lacked highlights. Therefore,
+                    adding ideas became one of my tasks during the holiday. </p>
+            </div>
+        </div>
+        <div class='section' id='section-3'>
+            <h2 class='title'>01-Oct-2024 - 07-Oct-2024</h2>
+            <div style='display: flex;'>
+                <p class='contentText'>
+                    This week I was working on making the site more interactive and interesting by adding new pages. At the
+                    same time I overhauled the prototype and devised a solution that balanced the team’s desire for
+                    interactivity with the practical uses of the existing materials and finished web elements. </p>
+                <div style='display: flex;'>
+                    <img style='width: 200px;height: 250px;margin-right: 20px;' src='ls-3.1.jpg' alt='Placeholder Image 1'>
+                    <img style='width: 200px;height: 250px;' src='ls-3.2.jpg' alt='Placeholder Image 1'>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class='section' id='section-4'>
+            <h2 style='align-self: center;' class='title'>Periodic reflection</h2>
+            <p class='contentText'>
+                This was a very productive week focused on adding core features to the project. Our main goal was to refine
+                and present interim results, a task that was accomplished under the pressure of numerous ongoing projects in
+                other classes. The group discussion took place in a friendly and collaborative atmosphere, allowing us to
+                quickly reach consensus. This positive dynamic has enhanced my anticipation for future work with this team.
+            </p>
+            <p class='contentText'>
+                I spent a considerable amount of time building our website and preparing explanatory presentations. As
+                someone studying interaction design, my coding skills are not that strong, so I took on a supporting role
+                for code-related tasks. Thankfully, two teammates with IT backgrounds generously provided guidance, pointing
+                out areas where I needed to grow on my own. Recognizing my own limitations, I focused on sharing
+                responsibilities in other areas to contribute effectively.
+    
+            </p>
+            <p class='contentText'>
+                During the team meeting, we discovered that our content lacked interactivity and engagement. I focused on
+                developing a solution that would enhance interactivity while leveraging our existing website and materials.
+                This process highlighted a valuable lesson: Improving a project sometimes requires drawing inspiration from
+                the success of others. By anticipating future situations where similar major adjustments might be necessary,
+                this experience equipped me with strategies to more skillfully address such challenges. Overall, it was a
+                week of growth and learning, driven by teamwork and adaptability.
+            </p>
+        </div>
+    </div> -->
+
+
+        <!-- <div style='width: 100%;display: flex;flex-direction: column;align-items: center;'>
+
+            <div class='section' id='section-4'>
+                <h2 style='align-self: center;' class='title'>Periodic reflection</h2>
+                <p class='contentText'>
+                    This marks my first project in life. It has to be said that it was an exhilarating experience.
+                    Although during the project completion, time seemed to fly by, as if I hadn't had the chance to
+                    savor the process before rushing into the next stage. However, reflecting now, I realize I have
+                    experienced a lot.
+                </p>
+                <p class='contentText'>
+                    Firstly, for the first time, I experienced what it's like to collaborate with people from different
+                    fields to complete a project. Throughout the process, I continuously discovered my shortcomings, but
+                    also my strengths.These shortcomings have shown me which areas I can improve upon, and the
+                    continuous discovery of my strengths has significantly boosted my self-confidence. Secondly, by
+                    completing this course, I gradually learned how an effective product creation cycle operates and
+                    what each person should accomplish when in different roles. Furthermore, I gained a slight taste of
+                    how a product is produced in a real company, which clarified my future career direction and enhanced
+                    my confidence.However, I also have some suggestions for improvement. One of them is that the course
+                    uses too many software, which increases the difficulty for students to complete assignments. For
+                    example, UQCloud feels redundant to me. Secondly, although I am satisfied with the overall output of
+                    the course, I also feel that the explanation of some detailed knowledge is inadequate.
+                </p>
+                <p class='contentText'>Overall, although there are some minor complaints, I am satisfied with my performance in completing
+                    the project and the knowledge I have gained from this course.
+                </p>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="buttons">
+        <button style="width: 86px;height: 200px;background-color: #102144;color: #ffffff;font-size: 20px;" id="button1"
+            class="expandButton" onclick="loadPage('index.html')">
+            A<br>B<br>O<br>U<br>T
+        </button>
+        <button style="width: 105px;height: 250px;background-color: #1D3972;color: #ffffff;font-size: 20px;"
+            id="button2" class="expandButton" onclick="loadPage('process.html')">
+            J P<br>O R<br>U O<br>R C<br>N E<br>A S<br>L S<br>S <br>
+        </button>
+        <button style="width: 67px;height: 220px;background-color: #2B53A7;color: #ffffff;font-size: 20px;" id="button2"
+            id="button3" class="expandButton" onclick="loadPage('portfolio.html')">
+            P <br>O <br>R <br>T <br>F <br>O <br>L <br>I <br>O
+        </button>
+    </div>
+    <script>
+        let buttons = document.querySelectorAll(".topExpandButton");
+       let originalWidth = buttons[0].offsetHeight; // Assuming all buttons have the same initial width
+       buttons.forEach(button => {
+           button.addEventListener("click", function() {
+               // Reset all buttons to original width
+               buttons.forEach(btn => btn.style.height = originalWidth + "px");
+               // Increase width of clicked button
+               this.style.height = originalWidth + 20 + "px";
+            //    window.location.href = page;
+           });
+       });
+        function loadPage(page) {
+           window.location.href = page;
+       }
+        function loadContentPage(page) {
+            const contentContainer = document.getElementById('content');
+            let newContent = '';
+            switch (page) {
+                case 'early':
+                    newContent =
+                        "<div style='width: 100%;display: flex;flex-direction: column;align-items: center;'><div class='section' id='section-1'><h2 class='title'>04-Aug-2024 - 10-Aug-2024</h2><div style='display: flex;flex-direction: row;'><div style='width: 70%;' class='contentText;'>The focus of the week was to complete the poster by the upcoming deadline and decide on a specific theme. Ultimately, I chose the theme of whale watching after considering multiple complex themes and seeking inspiration from other people's designs. I then initiated research on whale watching seasons and Australian social patterns to gather the necessary data and references needed to design the website.</div><div style='display: flex;flex-direction: column;'><img src='es1.png' alt='Placeholder Image 1'></div></div></div><div class='section' id='section-2'><h2 class='title'>11-Aug-2024 - 17-Aug-2024</h2><div style='display: flex;'><img src='es2.png' alt='Placeholder Image 1'><p style='width: 70%;' class='contentText'>During the week I completed the design of the poster and the website, and tried to make both consistent with the chosen theme. I worked until late to complete the website but achieved a satisfactory result. In the practical class I discussed with other students and simulated the tasks of the upcoming group project.</p></div></div><div class='section' id='section-3'><h2 class='title'>18-Aug-2024 - 24-Aug-2024</h2><p class='contentText'>This week we formed teams for our upcoming projects. I actively participated in the group formation and discussions, and contributed to the selection of the project topic based on my individual work. We presented the posters produced in the previous phase and discussed the group activities outlined in the team charter. My work was selected as the theme for our team project. In the following group discussions, I focused on being friendly and open-minded, and listening more while providing positive feedback.        </p></div><div class='section' id='section-4'><h2 class='title'>Periodic reflection</h2><p class='contentText'>This week was a whirlwind of creativity and reflection, as I successfully completed the poster, a critical stage in our group project. The journey began with completing the poster, a task complicated by the late conception of the theme. Time constraints forced me to engage in an intense period of design work to align the poster and my website with the overall theme I had envisioned. The pressure ultimately led to an all-nighter to complete the website. While proud of the result, the experience taught me an important lesson in time management, especially for future projects where I hope to avoid last-minute sprints of work.</p><p class='contentText'>In the practical class, we worked intensively on the preparations for the upcoming group project under the guidance of our tutor. The climax of the week was the formation of our project team. Discussions in class led to the signing of the team charter and the presentation of the poster last week. The course continues to be a valuable mirror that has revealed subjects I need to study further.Overall, this week was full of achievements and reflections that have driven professional growth and personal development.</p></div></div>";
+                    break;
+                case 'mid':
+                    newContent = "<div style='width: 100%;display: flex;flex-direction: column;align-items: center;'><div class='section' id='section-1'><h2 class='title'>25-Aug-2024 - 31-Aug-2024</h2><div style='display: flex;flex-direction: row;'><div style='width: 70%;' class='contentText;'>This week I started working on the project prototype and found it difficult to manage the project work while balancing tasks from other courses. Therefore, I decided to contact team members more frequently to improve collaboration and coordination in future stages of the project. I prepared a timeline to help remember important submission dates and avoid missing tasks in the future.                </div><div style='display: flex;flex-direction: column;'><img src='iw-2.png' alt='Placeholder Image 1'></div></div></div><div class='section' id='section-2'><h2 class='title'>01-Sep-2024 - 07-Sep-2024</h2><div style='display: flex;'><img src='m-s-2.png' alt='Placeholder Image 1'><p style='width: 70%;' class='contentText'>We had a team presentation this week, but due to poor communication and coordination, the overall performance was not as good as expected. But anyway, we decided to take a break this week.                </p></div></div><div class='section' id='section-4'><h2 style='align-self: center;' class='title'>Periodic reflection</h2><p class='contentText'>This week marked the beginning of our prototype development – ​​a critical phase for our project. Reflecting on the chaos of last week, I wish I had been more coordinated. However, the challenge of synchronizing timetables remained, as this was compromised by the heavy assessment requirements of other courses. This week, we had a presentation. In retrospect, while everyone put in a commendable effort, the result did not fully reflect our potential. The lack of communication within the team was evident, especially our failure to verify the completeness of everyone’s contribution, which caused our presentation to exceed the allotted time. It was clear that more cohesive teamwork was essential. We also held multiple meetings focused on identifying and defining the characteristics of our project.</p><p class='contentText'>All in all, this week’s experience highlighted the ongoing effort to balance academic obligations, the importance of effective team communication, and the need for better organizational strategies. Going forward, I am confident in fostering a collaborative and productive environment with my team, aimed at efficient communication and timely completion of tasks.</p></div></div>";
+                    break;
+                case 'late':
+                    newContent = "<div style='width: 100%;display: flex;flex-direction: column;align-items: center;'> <div class='section' id='section-1'> <h2 class='title'>08-Sep-2024 - 14-Sep-2024</h2> <div style='display: flex;flex-direction: row;'> <div style='width: 70%;' class='contentText;'> We have held several meetings this week, focusing on defining the project features and discussing mid-term results. So far, the prototype has been completed and the code is being written. I finally learned how to use github, which is very convenient for collective completion of code. </div> <div style='display: flex;flex-direction: column;'> <img src='ls-1.png' alt='Placeholder Image 1'> </div> </div> </div> <div class='section' id='section-2'> <h2 class='title'>15-Sep-2024 - 21-Sep-2024</h2> <div style='display: flex;'> <img src='ls-2.png' alt='Placeholder Image 1'> <p style='width: 70%;' class='contentText'> This week we focused on building the website and creating the corresponding MVP presentation. I contributed to the project by taking on coding-related support work and working with teammates with stronger IT backgrounds. I planned to find additional resources to improve my coding skills during the holiday. After the MVP presentation, our team agreed that our website lacked highlights. Therefore, adding ideas became one of my tasks during the holiday. </p> </div> </div> <div class='section' id='section-3'> <h2 class='title'>01-Oct-2024 - 07-Oct-2024</h2> <div style='display: flex;'> <p class='contentText'> This week I was working on making the site more interactive and interesting by adding new pages. At the same time I overhauled the prototype and devised a solution that balanced the team’s desire for interactivity with the practical uses of the existing materials and finished web elements. </p> <div style='display: flex;'> <img style='width: 200px;height: 250px;margin-right: 20px;' src='ls-3.1.jpg' alt='Placeholder Image 1'> <img style='width: 200px;height: 250px;' src='ls-3.2.jpg' alt='Placeholder Image 1'> </div> </div> </div> <div class='section' id='section-4'> <h2 style='align-self: center;' class='title'>Periodic reflection</h2> <p class='contentText'> This was a very productive week focused on adding core features to the project. Our main goal was to refine and present interim results, a task that was accomplished under the pressure of numerous ongoing projects in other classes. The group discussion took place in a friendly and collaborative atmosphere, allowing us to quickly reach consensus. This positive dynamic has enhanced my anticipation for future work with this team. </p> <p class='contentText'> I spent a considerable amount of time building our website and preparing explanatory presentations. As someone studying interaction design, my coding skills are not that strong, so I took on a supporting role for code-related tasks. Thankfully, two teammates with IT backgrounds generously provided guidance, pointing out areas where I needed to grow on my own. Recognizing my own limitations, I focused on sharing responsibilities in other areas to contribute effectively. </p> <p class='contentText'> During the team meeting, we discovered that our content lacked interactivity and engagement. I focused on developing a solution that would enhance interactivity while leveraging our existing website and materials. This process highlighted a valuable lesson: Improving a project sometimes requires drawing inspiration from the success of others. By anticipating future situations where similar major adjustments might be necessary, this experience equipped me with strategies to more skillfully address such challenges. Overall, it was a week of growth and learning, driven by teamwork and adaptability. </p> </div> </div>";
+                    break;
+                case 'course':
+                    newContent = "<div style='width: 100%;display: flex;flex-direction: column;align-items: center;'> <div class='section' id='section-4'> <h2 style='align-self: center;' class='title'>Periodic reflection</h2> <p class='contentText'> This marks my first project in life. It has to be said that it was an exhilarating experience. Although during the project completion, time seemed to fly by, as if I hadn't had the chance to savor the process before rushing into the next stage. However, reflecting now, I realize I have experienced a lot. </p> <p class='contentText'> Firstly, for the first time, I experienced what it's like to collaborate with people from different fields to complete a project. Throughout the process, I continuously discovered my shortcomings, but also my strengths.These shortcomings have shown me which areas I can improve upon, and the continuous discovery of my strengths has significantly boosted my self-confidence. Secondly, by completing this course, I gradually learned how an effective product creation cycle operates and what each person should accomplish when in different roles. Furthermore, I gained a slight taste of how a product is produced in a real company, which clarified my future career direction and enhanced my confidence.However, I also have some suggestions for improvement. One of them is that the course uses too many software, which increases the difficulty for students to complete assignments. For example, UQCloud feels redundant to me. Secondly, although I am satisfied with the overall output of the course, I also feel that the explanation of some detailed knowledge is inadequate. </p> <p class='contentText'>Overall, although there are some minor complaints, I am satisfied with my performance in completing the project and the knowledge I have gained from this course. </p> </div> </div>";
+                    break;
+                default:
+                    newContent = '<p>未知按钮</p>';
+                    break;
+            }
+            contentContainer.innerHTML = newContent;
+        }
+    </script>
+</body>
+
+</html>

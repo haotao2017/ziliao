@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            background-image: url('header2.png');
+            /* 替换为你的背景图片链接 */
+            height: 200px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section {
+            text-align: center;
+            /* margin: 20px 0; */
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .section .title {
+            color: #6794d7;
+            font-size: 32;
+            font-weight: normal;
+            align-self: flex-start;
+        }
+
+        .section img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .buttons {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttons button {
+            /* margin: 5px; */
+            padding: 10px;
+            align-self: flex-end;
+        }
+
+        .buttonhead {
+            text-align: center;
+            margin: 0px 0;
+            display: flex;
+        }
+
+        .buttonhead button {
+            /* margin: 5px; */
+            /* padding: 10px 20px; */
+            background-color: #67A4CD;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 154px;
+            height: 54px;
+            color: #ffffff;
+            font-size: 34;
+            font-weight: bolder;
+            align-self: flex-start;
+        }
+
+        .contentText {
+            font-size: 20;
+            line-height: 30px;
+            text-align: left;
+        }
+
+        .footerText {
+            font-size: 13;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 90%;
+            align-self: center;
+        }
+    </style>
+    <title>Static Page</title>
+</head>
+
+<body>
+    <div class="background">
+        <div style="position: absolute;top: 0px;right: 0px;color: #ffffff;font-size: 13px;">Start Sky Images – Adobe Stock</div>
+        <div style="display: flex;justify-content: flex-start;flex-direction: row;width: 100%;margin-left: 50px;" class="header">
+            <h1 style="font-size: 64px;color: #ffffff;margin: 0px;">My Portfolio</h1>
+        </div>
+    </div>
+    <div class="buttonhead">
+        <button class="topExpandButton" onclick="loadContentPage('early')">Early stage 4A</button>
+        <button class="topExpandButton" onclick="loadContentPage('mid')">Mid stage</button>
+        <button class="topExpandButton" onclick="loadContentPage('late')">Late stage</button>
+        <button class="topExpandButton" onclick="loadContentPage('course')">Video Demonstration</button>
+    </div>
+
+    <div style='width: 90%;' id='content'>
+
+        <div class="section" id="section-1">
+            <h2 class="title">Initial work</h2>
+            <div style="display: flex;flex-direction:column;">
+
+                <div class="contentText">
+                    I used electronic notes to draw drafts in the early stage because I think that in the early stage of
+                    design, when the project concept and theme are not clear, the draft will need to be modified
+                    frequently. The right side of the picture below is the website functions I sorted out. The right
+                    side is a prototype draft based on the functions.
+                </div>
+
+                <div style="display: flex;flex-direction: column;">
+                    <img style="align-self: center;width: 600px;height: 400px;" src="es1.png" alt="Placeholder Image 1">
+                    <p style="font-size: 15px;">Based on the rough draft, I drew mid-fidelity and high-fidelity
+                        prototypes.From left to right in the picture are the popular science page, the whale migration
+                        map and the whale knowledge page</p>
+                    <img style="align-self: center;width: 600px;height: 400px;" src="baseon.png"
+                        alt="Placeholder Image 1">
+                    <p style="font-size: 15px;align-self: flex-start;">
+                        I used the prototype I designed for my poster.</p>
+                    <img style="align-self: center;width: 600px;height: 400px;" src="es2.png" alt="Placeholder Image 1">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="section" id="section-1">
+            <h2 class="title">Mid-term work</h2>
+            <div style="display: flex;flex-direction:column;">
+
+                <div class="contentText">
+                    Since my idea was chosen by the team members as the theme of the next team project to be completed, I can continue to use my initial design. At the beginning of this stage, I tried to refine the functions I conceived by describing the interaction of the functions in more detail. The frame on the left in the figure below shows that the user can explore the detailed area of ​​the map with the mouse in the style of a magnifying glass. The right side of the figure shows the creatures that will appear in the map.
+                </div>
+
+                <div style="display: flex;flex-direction: column;">
+                    <img style="align-self: center;width: 600px;height: 400px;" src="mw-1.png" alt="Placeholder Image 1">
+                    <p style="font-size: 15px;text-align: left;">After finishing the presentation of this phase of the design, my team members and I decided to expand the functionality of the website we designed, so I had to draw new prototypes for the newly added page. The new page is for the game. I sketched out this page. On the left, the diagram shows a doodle of the game interface. I interspersed the content and patterns into the draft. On the right are some windows that need to be added for interaction. In the blank areas of the diagram, I noted down some content I feel should be included and explanations about what each window is meant to remind the user of.
+                    </p>
+                    <div style='display: flex;justify-content: center;'>
+                        <img style="align-self: center;width: 250px;height: 300px;margin-right: 20px;" src="ls-3.1.jpg"
+                        alt="Placeholder Image 1">
+                        <img style="align-self: center;width: 250px;height: 300px;" src="ls-3.2.jpg"
+                        alt="Placeholder Image 1">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class='section' id='section-1'>
+            <h2 class='title'>Post-term work</h2>
+            <div style='display: flex;flex-direction:column;'>
+
+                <div class='contentText'>
+                    Due to extensive changes in the website content, the previously completed design sections also require modifications. The image below is a sketch of the education page. In practice, we learned how to use code to integrate content from Wikipedia into the website. After discussion within the team, we decided to utilize this knowledge to enrich our website content. Therefore, when revising the education page, I focused on how to effectively showcase this feature.
+                                </div>
+
+                <div style='display: flex;flex-direction: column;'>
+                    <img style='align-self: center;width: 400px;height: 600px;' src='pw-1.png' alt='Placeholder Image 1'>
+                    <p style='font-size: 15px;text-align: left;''>After that, I improved and supplemented all the sketches. In the picture below, from left to right are the education page, the game page and interaction, and the details of the game interface.
+                    </p>
+                    <div style='display: flex;justify-content: center;'>
+                        <img style='align-self: center;width: 250px;height: 300px;margin-right: 10px;' src='pw-2.1.png'
+                        alt='Placeholder Image 1'>
+                        <img style='align-self: center;width: 250px;height: 300px;margin-right: 10px;' src='pw-2.2.png'
+                        alt='Placeholder Image 1'>
+                        <img style='align-self: center;width: 250px;height: 300px;' src='pw-2.3.png'
+                        alt='Placeholder Image 1'>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class='section' id='section-1'>
+            <h2 class='title'>Video Demonstration</h2>
+            <div style='display: flex;flex-direction:column;'>
+
+                <div class='contentText'>
+                    Based on the work of the previous stages, I drew a high-fidelity prototype. The usage process and the details of the page are demonstrated in detail through the video.                                </div>
+                <div style='display: flex;flex-direction: column;'>
+                    <video id='videoPlayer' controls>
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <div class="buttons">
+        <button style="width: 86px;height: 200px;background-color: #102144;color: #ffffff;font-size: 20px;" id="button1"
+            class="expandButton" onclick="loadPage('index.html')">
+            A<br>B<br>O<br>U<br>T
+        </button>
+        <button style="width: 67px;height: 250px;background-color: #1D3972;color: #ffffff;font-size: 20px;" id="button2"
+            class="expandButton" onclick="loadPage('process.html')">
+            J P<br>O R<br>U O<br>R C<br>N E<br>A S<br>L S<br>S <br>
+        </button>
+        <button style="width: 105px;height: 220px;background-color: #2B53A7;color: #ffffff;font-size: 20px;"
+            id="button2" id="button3" class="expandButton" onclick="loadPage('portfolio.html')">
+            P <br>O <br>R <br>T <br>F <br>O <br>L <br>I <br>O
+        </button>
+    </div>
+    <script>
+        const videoPath = "video.mp4";
+        
+        window.onload = function() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = videoPath;
+            videoPlayer.load();
+        };
+
+        let buttons = document.querySelectorAll(".topExpandButton");
+       let originalWidth = buttons[0].offsetHeight; // Assuming all buttons have the same initial width
+       buttons.forEach(button => {
+           button.addEventListener("click", function() {
+               // Reset all buttons to original width
+               buttons.forEach(btn => btn.style.height = originalWidth + "px");
+               // Increase width of clicked button
+               this.style.height = originalWidth + 20 + "px";
+            //    window.location.href = page;
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = videoPath;
+            videoPlayer.load();
+           });
+       });
+        function loadPage(page) {
+            window.location.href = page;
+        }
+
+        function loadContentPage(page) {
+            const contentContainer = document.getElementById('content');
+            let newContent = '';
+            switch (page) {
+                case 'early':
+                    newContent =
+                        "<div style='width: 100%;display: flex;flex-direction: column;align-items: center;'><div class='section' id='section-1'><h2 class='title'>04-Aug-2024 - 10-Aug-2024</h2><div style='display: flex;flex-direction: row;'><div style='width: 70%;' class='contentText;'>The focus of the week was to complete the poster by the upcoming deadline and decide on a specific theme. Ultimately, I chose the theme of whale watching after considering multiple complex themes and seeking inspiration from other people's designs. I then initiated research on whale watching seasons and Australian social patterns to gather the necessary data and references needed to design the website.</div><div style='display: flex;flex-direction: column;'><img src='es1.png' alt='Placeholder Image 1'></div></div></div><div class='section' id='section-2'><h2 class='title'>11-Aug-2024 - 17-Aug-2024</h2><div style='display: flex;'><img src='es2.png' alt='Placeholder Image 1'><p style='width: 70%;' class='contentText'>During the week I completed the design of the poster and the website, and tried to make both consistent with the chosen theme. I worked until late to complete the website but achieved a satisfactory result. In the practical class I discussed with other students and simulated the tasks of the upcoming group project.</p></div></div><div class='section' id='section-3'><h2 class='title'>18-Aug-2024 - 24-Aug-2024</h2><p class='contentText'>This week we formed teams for our upcoming projects. I actively participated in the group formation and discussions, and contributed to the selection of the project topic based on my individual work. We presented the posters produced in the previous phase and discussed the group activities outlined in the team charter. My work was selected as the theme for our team project. In the following group discussions, I focused on being friendly and open-minded, and listening more while providing positive feedback.        </p></div><div class='section' id='section-4'><h2 class='title'>Periodic reflection</h2><p class='contentText'>This week was a whirlwind of creativity and reflection, as I successfully completed the poster, a critical stage in our group project. The journey began with completing the poster, a task complicated by the late conception of the theme. Time constraints forced me to engage in an intense period of design work to align the poster and my website with the overall theme I had envisioned. The pressure ultimately led to an all-nighter to complete the website. While proud of the result, the experience taught me an important lesson in time management, especially for future projects where I hope to avoid last-minute sprints of work.</p><p class='contentText'>In the practical class, we worked intensively on the preparations for the upcoming group project under the guidance of our tutor. The climax of the week was the formation of our project team. Discussions in class led to the signing of the team charter and the presentation of the poster last week. The course continues to be a valuable mirror that has revealed subjects I need to study further.Overall, this week was full of achievements and reflections that have driven professional growth and personal development.</p></div></div>";
+                    break;
+                case 'mid':
+                    newContent = "<div style='width: 100%;display: flex;flex-direction: column;align-items: center;'><div class='section' id='section-1'><h2 class='title'>25-Aug-2024 - 31-Aug-2024</h2><div style='display: flex;flex-direction: row;'><div style='width: 70%;' class='contentText;'>This week I started working on the project prototype and found it difficult to manage the project work while balancing tasks from other courses. Therefore, I decided to contact team members more frequently to improve collaboration and coordination in future stages of the project. I prepared a timeline to help remember important submission dates and avoid missing tasks in the future.                </div><div style='display: flex;flex-direction: column;'><img src='iw-2.png' alt='Placeholder Image 1'></div></div></div><div class='section' id='section-2'><h2 class='title'>01-Sep-2024 - 07-Sep-2024</h2><div style='display: flex;'><img src='m-s-2.png' alt='Placeholder Image 1'><p style='width: 70%;' class='contentText'>We had a team presentation this week, but due to poor communication and coordination, the overall performance was not as good as expected. But anyway, we decided to take a break this week.                </p></div></div><div class='section' id='section-4'><h2 style='align-self: center;' class='title'>Periodic reflection</h2><p class='contentText'>This week marked the beginning of our prototype development – ​​a critical phase for our project. Reflecting on the chaos of last week, I wish I had been more coordinated. However, the challenge of synchronizing timetables remained, as this was compromised by the heavy assessment requirements of other courses. This week, we had a presentation. In retrospect, while everyone put in a commendable effort, the result did not fully reflect our potential. The lack of communication within the team was evident, especially our failure to verify the completeness of everyone’s contribution, which caused our presentation to exceed the allotted time. It was clear that more cohesive teamwork was essential. We also held multiple meetings focused on identifying and defining the characteristics of our project.</p><p class='contentText'>All in all, this week’s experience highlighted the ongoing effort to balance academic obligations, the importance of effective team communication, and the need for better organizational strategies. Going forward, I am confident in fostering a collaborative and productive environment with my team, aimed at efficient communication and timely completion of tasks.</p></div></div>";
+                    break;
+                case 'late':
+                    newContent = "<div class='section' id='section-1'> <h2 class='title'>Post-term work</h2> <div style='display: flex;flex-direction:column;'> <div class='contentText'> Due to extensive changes in the website content, the previously completed design sections also require modifications. The image below is a sketch of the education page. In practice, we learned how to use code to integrate content from Wikipedia into the website. After discussion within the team, we decided to utilize this knowledge to enrich our website content. Therefore, when revising the education page, I focused on how to effectively showcase this feature. </div> <div style='display: flex;flex-direction: column;'> <img style='align-self: center;width: 400px;height: 600px;' src='pw-1.png' alt='Placeholder Image 1'> <p style='font-size: 15px;text-align: left;''>After that, I improved and supplemented all the sketches. In the picture below, from left to right are the education page, the game page and interaction, and the details of the game interface. </p> <div style='display: flex;justify-content: center;'> <img style='align-self: center;width: 250px;height: 300px;margin-right: 10px;' src='pw-2.1.png' alt='Placeholder Image 1'> <img style='align-self: center;width: 250px;height: 300px;margin-right: 10px;' src='pw-2.2.png' alt='Placeholder Image 1'> <img style='align-self: center;width: 250px;height: 300px;' src='pw-2.3.png' alt='Placeholder Image 1'> </div> </div> </div> </div>";
+                    break;
+                case 'course':
+                    newContent = "<div class='section' id='section-1'> <h2 class='title'>Video Demonstration</h2> <div style='display: flex;flex-direction:column;'> <div class='contentText'> Based on the work of the previous stages, I drew a high-fidelity prototype. The usage process and the details of the page are demonstrated in detail through the video.                                </div> <div style='display: flex;flex-direction: column;'> <video id='videoPlayer' controls> 您的浏览器不支持视频播放。 </video> </div> </div> </div>";
+                    break;
+                default:
+                    newContent = '<p>未知按钮</p>';
+                    break;
+            }
+            contentContainer.innerHTML = newContent;
+        }
+    </script>
+</body>
+
+</html>
